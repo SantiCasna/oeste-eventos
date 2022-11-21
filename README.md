@@ -1,4 +1,4 @@
-### Hola 👋, soy Santiago Casna
+### Hi 👋, I´m Santiago Casna
 
 ✨ _Project Coordinator_ ✨
 
