@@ -12,7 +12,7 @@ body{
 .grid-contenedor{
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: repeat(3; 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px auto;
                         /*---GRID TEMPLATE AREA---*/
     grid-template-areas:
@@ -46,11 +46,11 @@ header h1{
 }
 
 header nav ul li{
-    margin: 15px;
+    margin: 10px;
     font-size: 15px;
     display: block;
     justify-items: stretch;
-    transition: 1s ease-in;
+    transition: 0.5s ease-in;
 }
 
 header a:hover{
@@ -116,8 +116,8 @@ main{
 }
 
 .salones .salones-contenedor div{
-    weight: 250px;
-    height: 350px;
+    width: 355px;
+    height: 400px;
     border: 1px solid black;
     text-align: center;
     margin: 60px;
@@ -132,38 +132,33 @@ main{
 }
 
 .salones .salones-contenedor div img{
-    weight: 250px;
+    width: 353px;
     height: 250px;
 }
 
-.salones .salones-contenedor div p{
-    padding: 13px;
-}
-
-.salones .salones-contenedor div a{
+.salones .salones-contenedor div button{
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 7px;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
     transition: 0.5s ease-in;
 }
 
-.salones .salones-contenedor div a:hover{
+.salones .salones-contenedor div button:hover{
     background-color: orchid;
     color: black;
 }
 
-.salones .salones-contenedor p{
-    text-align: center;
-    padding: 20px;
+.salones .salones-contenedor h3{
+    margin: 10px;
 }
 
-.salones .salones-contenedor a{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border-radius: 10px;
+.salones .salones-contenedor p{
+    margin: -5px;
 }
 
                         /*---SECCIÓN CIERRE SALONES---*/
@@ -171,6 +166,7 @@ main{
 .cierre_salones img{
     width: 780px;
     height: 520px;
+    margin: 10px;
 }
 
 .cierre_salones{
@@ -180,18 +176,18 @@ main{
     justify-content: space-between;
 }
 
-.cierre_salones div a{
+.cierre_salones div button{
     text-decoration: none;
     color: white;
     background-color: black;
     padding: 15px;
-    border-radius: 10px;
     margin: 22px;
+    border-radius: 10px;
     font-size: 15px;
     transition: 0.5s ease-in;
 }
 
-.cierre_salones div a:hover{
+.cierre_salones div button:hover{
     background-color: orchid;
     color: black;
 }
@@ -217,8 +213,8 @@ main{
 }
 
 .catering .catering-contenedor div{
-    width: 380px;
-    height: 350px;
+    width: 355px;
+    height: 400px;
     border: 1px solid black;
     text-align: center;
     margin: 60px;
@@ -233,38 +229,33 @@ main{
 }
 
 .catering .catering-contenedor div img{
-    weight: 250px;
+    width: 353px;
     height: 250px;
 }
 
-.catering .catering-contenedor div p{
-    padding: 13px;
-}
-
-.catering .catering-contenedor div a{
+.catering .catering-contenedor div button{
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 7px;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
     transition: 0.5s ease-in;
 }
 
-.catering .catering-contenedor div a:hover{
+.catering .catering-contenedor div button:hover{
     background-color: orchid;
     color: black;
 }
 
-.catering .catering-contenedor p{
-    text-align: center;
-    padding: 20px;
+.catering .catering-contenedor h3{
+    margin: 10px;
 }
 
-.catering .catering-contenedor a{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border-radius: 10px;
+.catering .catering-contenedor p{
+    margin: -5px;
 }
 
                         /*---SECCIÓN CIERRE CATERING---*/
@@ -272,6 +263,7 @@ main{
 .cierre_catering img{
     width: 780px;
     height: 520px;
+    margin: 10px;
 }
 
 .cierre_catering{
@@ -281,18 +273,18 @@ main{
     justify-content: space-between;
 }
 
-.cierre_catering div a{
+.cierre_catering div button{
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     margin: 22px;
     font-size: 15px;
     transition: 0.5s ease-in;
 }
 
-.cierre_catering div a:hover{
+.cierre_catering div button:hover{
     background-color: orchid;
     color: black;
 }
@@ -328,18 +320,24 @@ footer a{
 }
 
 footer a img{
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
 }
 
 footer nav ul li{
     margin: 15px;
     font-size: 15px;
     display: flex;
+    transition: 0.5s ease-in;
+}
+
+footer a:hover{
+    color: darkmagenta;
 }
 
                         /*---MEDIA QUERY --- RESPONSIVE ---*/
+
 @media screen and (max-width: 1152px){
     .cierre_salones{
         flex-direction: column;
