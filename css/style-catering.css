@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-contenedor {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto;
+    /*---GRID TEMPLATE AREA---*/
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+/*---HEADER---*/
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: beige;
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+    justify-items: center;
+    z-index: 9999;
+}
+
+header h1 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 10px;
+    font-size: 15px;
+    display: block;
+    justify-items: stretch;
+    transition: 0.5s ease-in;
+}
+
+header a:hover {
+    color: darkmagenta;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center stretch;
+}
+
+/*---SECCIÓN DE SALONES---*/
+main{
+    grid-area: main;
+}
+
+.salones h2 {
+    text-align: center;
+    background-color: rgba(239, 225, 198, 0.904);
+    color: black;
+    padding: 10px;
+}
+
+.salones .salones-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.salones .salones-contenedor div {
+    width: 355px;
+    height: 400px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 60px;
+    box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    transition: 2.5s;
+}
+
+.salones .salones-contenedor div:hover {
+    transform: scale(1.25);
+}
+
+.salones .salones-contenedor div img {
+    width: 353px;
+    height: 250px;
+}
+
+.salones .salones-contenedor div button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.salones .salones-contenedor div button:hover {
+    background-color: orchid;
+    color: black;
+}
+
+.salones .salones-contenedor h4 {
+    margin: 10px;
+}
+
+.salones .salones-contenedor p {
+    margin: -5px;
+}
+
+/*---WHATS APP FLOTANTE---*/
+.whatsapp {
+    position: fixed;
+    bottom: 13%;
+    right: 0.5%;
+}
+
+.whatsapp img {
+    width: 65px;
+    height: 65px;
+}
+
+/*-- FOOTER --*/
+
+footer {
+    background-color: beige;
+    padding: 20px;
+    grid-area: footer;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+footer nav ul li {
+    margin: 15px;
+    font-size: 15px;
+    display: flex;
+    transition: 0.5s ease-in;
+}
+
+footer a:hover {
+    color: darkmagenta;
+}
+
+/*---MEDIA QUERY --- RESPONSIVE ---*/
+
+@media screen and (max-width: 1152px) {
+    .cierre_salones {
+        flex-direction: column;
+    }
+
+    .cierre_salones-contenedor {
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .cierre_salones .img-contenedor {
+        padding: 15px;
+    }
+
+    .cierre_catering {
+        flex-direction: column;
+    }
+
+    .cierre_catering-contenedor {
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .cierre_catering .img-contenedor {
+        padding: 15px;
+    }
+}

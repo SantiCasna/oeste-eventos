@@ -33,6 +33,7 @@ header{
     top: 0px;
     grid-area: header;
     justify-items: center;
+    z-index: 9999;
 }
 
 header h1{

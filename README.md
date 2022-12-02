@@ -5,6 +5,9 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+- 🔭 I’m currently working on "Oeste Eventos", un sitio para ver salones y caterings para fiestas.
+- 🌱 I’m currently learning sobre Desarrollo Web realizando un curso en Coderhouse.
+- 💬 Ask me about apuestas deportivas y el deporte en general.
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
