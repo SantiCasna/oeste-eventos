@@ -311,7 +311,6 @@ main{
 
 footer{
     background-color: beige;
-    padding: 20px;
     grid-area: footer;
 }
 
