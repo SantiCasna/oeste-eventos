@@ -278,7 +278,7 @@ main{
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     margin: 22px;
     font-size: 15px;
@@ -363,4 +363,6 @@ footer a:hover{
     }
     }
 
+    @media (max-width: 940px) and (min-width: 300px){
 
+    }
