@@ -70,22 +70,17 @@ main {
     grid-area: main;
 }
 
-.sumate_nosotros h2{
+.contacto h2{
     text-align: center;
     background-color: rgba(239, 225, 198, 0.904);
     color: black;
     padding: 10px;
 }
 
-.sumate_nosotros h4{
+.contacto h4{
     text-align: center;
     color: black;
-}
-
-.sumate_nosotros h5{
-    text-align: center;
-    color: black;
-    margin: 25px;
+    padding: 10px;
 }
 
 .formulario .nombre-formulario {
@@ -93,14 +88,14 @@ main {
     margin: 5px;
 }
 
-.formulario .ubicacion-formulario{
+.formulario .apellido-formulario{
     padding-left: 33.5%;
     margin: 5px;
 }
 
 .formulario .email-formulario{
     padding-left: 33.5%;
-    margin: 5px;
+    margin: 5px; 
 }
 
 .formulario .numero-formulario{
@@ -108,7 +103,7 @@ main {
     margin: 5px;
 }
 
-.formulario .servicio-formulario{
+.formulario .evento-formulario{
     padding-left: 33.5%;
     margin: 5px;
 }
@@ -126,7 +121,7 @@ main {
 /*---SECCIÓN CIERRE---*/
 .img-cierre-sumate {
     padding-left: 7.2%;
-    margin: 10px;   
+    margin: 10px;
 }
 
 /*---WHATS APP FLOTANTE---*/
