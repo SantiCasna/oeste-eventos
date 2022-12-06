@@ -169,3 +169,8 @@ footer nav ul li {
 footer a:hover {
     color: darkmagenta;
 }
+
+input :focus{
+    border: 3px solid blueviolet;
+    border-radius: 7px;
+}
