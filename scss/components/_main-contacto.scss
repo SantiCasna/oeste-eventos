@@ -1,0 +1,107 @@
+main {
+    grid-area: main;
+}
+
+.contacto {
+    h2 {
+        text-align: center;
+        background-color: rgba(239, 225, 198, 0.904);
+        color: black;
+        padding: 10px;
+    }
+
+    h4 {
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+
+    .formulario {}
+
+    .nombre-formulario {
+        padding-left: 33.3%;
+        margin: 5px;
+    }
+
+    label {}
+
+    input {}
+
+    .ubicacion-formulario {
+        padding-left: 33.5%;
+        margin: 5px;
+    }
+
+    label {}
+
+    input {}
+
+    .email-formulario {
+        padding-left: 33.5%;
+        margin: 5px;
+    }
+
+    label {}
+
+    input {}
+
+    .numero-formulario {
+        padding-left: 33.5%;
+        margin: 5px;
+    }
+
+    label {}
+
+    input {}
+
+    .servicio-formulario {
+        padding-left: 33.5%;
+        margin: 5px;
+    }
+
+    select {}
+
+    option {}
+
+    option {}
+
+    option {}
+
+    .comentarios-formulario {
+        text-align: center;
+        padding: 5px;
+    }
+
+    textarea {}
+
+    .submit-formulario {
+        text-align: center;
+        margin: 5px;
+    }
+
+    input {}
+
+    input {}
+
+    .img-cierre-contacto {
+        padding-left: 7.2%;
+        margin: 10px;
+    }
+
+    img {}
+
+    .whatsapp {
+        a {
+            position: fixed;
+            bottom: 13%;
+            right: 0.5%;
+        }
+
+        a {}
+
+        img {
+            width: 65px;
+            height: 65px;
+        }
+    }
+}

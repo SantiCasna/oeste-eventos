@@ -1,0 +1,29 @@
+footer{
+    background-color: beige;
+    grid-area: footer;
+    nav{
+        ul{
+            li{
+                margin: 15px;
+                font-size: 15px;
+                display: flex;
+                transition: 0.5s ease-in;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: darkmagenta;
+                    }
+                }
+            }
+        }
+
+        a{
+            img{
+                width: 50px;
+                height: 50px;
+                padding: 5px;
+            }
+        }
+    }
+}

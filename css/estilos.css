@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.grid-contenedor {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto;
+  /*---GRID TEMPLATE AREA---*/
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+header {
+  background-color: beige;
+  position: sticky;
+  top: 0px;
+  grid-area: header;
+  justify-items: center;
+  z-index: 9999; }
+  header a {
+    text-decoration: none;
+    color: black; }
+    header a h1 {
+      color: black;
+      font-size: 40px;
+      font-family: 'Roboto', sans-serif;
+      font-style: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center stretch; }
+    header nav ul li {
+      margin: 10px;
+      font-size: 15px;
+      display: block;
+      justify-items: stretch;
+      transition: 0.5s ease-in; }
+      header nav ul li a:hover {
+        color: darkmagenta; }
+
+main {
+  grid-area: main; }
+
+.hero {
+  text-align: center;
+  width: 100%;
+  height: 35vh;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .hero h2 {
+    text-align: center;
+    color: #163a5e; }
+  .hero h3 {
+    text-align: center;
+    padding: 10px;
+    color: #163a5e; }
+
+.salones h2 {
+  text-align: center;
+  background-color: rgba(239, 225, 198, 0.904);
+  color: black;
+  padding: 10px; }
+
+.salones .salones-contenedores {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 355px;
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 60px;
+  box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  transition: 2.5s; }
+  .salones .salones-contenedores:hover {
+    transform: scale(1.25); }
+  .salones .salones-contenedores img {
+    width: 353px;
+    height: 250px; }
+  .salones .salones-contenedores h4 {
+    margin: 10px; }
+  .salones .salones-contenedores p {
+    margin: -5px; }
+  .salones .salones-contenedores button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in; }
+    .salones .salones-contenedores button:hover {
+      background-color: orchid;
+      color: black; }
+
+.cierre_salones .cierre_salones-contenedores {
+  display: flex;
+  align-items: center;
+  margin: 5px 60px 5px 60px;
+  justify-content: space-between; }
+  .cierre_salones .cierre_salones-contenedores p {
+    margin: 25px;
+    font-size: 25px; }
+  .cierre_salones .cierre_salones-contenedores button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    margin: 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s ease-in; }
+    .cierre_salones .cierre_salones-contenedores button:hover {
+      background-color: orchid;
+      color: black; }
+
+.cierre_salones div img {
+  width: 780px;
+  height: 520px;
+  margin: 10px; }
+
+.catering h2 {
+  text-align: center;
+  background-color: rgba(239, 225, 198, 0.904);
+  color: black;
+  padding: 10px; }
+
+.catering .catering-contenedores {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 355px;
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 60px;
+  box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  transition: 2.5s; }
+  .catering .catering-contenedores:hover {
+    transform: scale(1.25); }
+  .catering .catering-contenedores img {
+    width: 353px;
+    height: 250px; }
+  .catering .catering-contenedores h4 {
+    margin: 10px; }
+  .catering .catering-contenedores p {
+    margin: -5px; }
+  .catering .catering-contenedores button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in; }
+    .catering .catering-contenedores button:hover {
+      background-color: orchid;
+      color: black; }
+
+.cierre_caternig .cierre_catering-contenedores {
+  display: flex;
+  align-items: center;
+  margin: 5px 60px 5px 60px;
+  justify-content: space-between; }
+  .cierre_caternig .cierre_catering-contenedores p {
+    margin: 25px;
+    font-size: 25px; }
+  .cierre_caternig .cierre_catering-contenedores button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    margin: 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s ease-in; }
+    .cierre_caternig .cierre_catering-contenedores button:hover {
+      background-color: orchid;
+      color: black; }
+
+.cierre_caternig div img {
+  width: 780px;
+  height: 520px;
+  margin: 10px; }
+
+.whatsapp a {
+  position: fixed;
+  bottom: 13%;
+  right: 0.5%; }
+
+.whatsapp img {
+  width: 65px;
+  height: 65px; }
+
+.salones h2 {
+  text-align: center;
+  background-color: rgba(239, 225, 198, 0.904);
+  color: black;
+  padding: 10px; }
+
+.salones .salones-contenedores {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 355px;
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 60px;
+  box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  transition: 2.5s; }
+  .salones .salones-contenedores:hover {
+    transform: scale(1.25); }
+  .salones .salones-contenedores img {
+    width: 353px;
+    height: 250px; }
+  .salones .salones-contenedores h4 {
+    margin: 10px; }
+  .salones .salones-contenedores p {
+    margin: -5px; }
+  .salones .salones-contenedores button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in; }
+    .salones .salones-contenedores button:hover {
+      background-color: orchid;
+      color: black; }
+
+.whatsapp a {
+  position: fixed;
+  bottom: 13%;
+  right: 0.5%; }
+
+.whatsapp img {
+  width: 65px;
+  height: 65px; }
+
+.catering h2 {
+  text-align: center;
+  background-color: rgba(239, 225, 198, 0.904);
+  color: black;
+  padding: 10px; }
+
+.catering .catering-contenedores {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 355px;
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 60px;
+  box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+  transition: 2.5s; }
+  .catering .catering-contenedores:hover {
+    transform: scale(1.25); }
+  .catering .catering-contenedores img {
+    width: 353px;
+    height: 250px; }
+  .catering .catering-contenedores h4 {
+    margin: 10px; }
+  .catering .catering-contenedores p {
+    margin: -5px; }
+  .catering .catering-contenedores button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in; }
+    .catering .catering-contenedores button:hover {
+      background-color: orchid;
+      color: black; }
+
+.whatsapp a {
+  position: fixed;
+  bottom: 13%;
+  right: 0.5%; }
+
+.whatsapp img {
+  width: 65px;
+  height: 65px; }
+
+main {
+  grid-area: main; }
+
+.sumate_nosotros h2 {
+  text-align: center;
+  background-color: rgba(239, 225, 198, 0.904);
+  color: black;
+  padding: 10px; }
+
+.sumate_nosotros h4 {
+  text-align: center;
+  color: black; }
+
+.sumate_nosotros h5 {
+  text-align: center;
+  color: black;
+  margin: 25px; }
+
+.sumate_nosotros .nombre-formulario {
+  padding-left: 33.3%;
+  margin: 5px; }
+
+.sumate_nosotros .ubicacion-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.sumate_nosotros .email-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.sumate_nosotros .numero-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.sumate_nosotros .servicio-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.sumate_nosotros .comentarios-formulario {
+  text-align: center;
+  padding: 5px; }
+
+.sumate_nosotros .submit-formulario {
+  text-align: center;
+  margin: 5px; }
+
+.sumate_nosotros .img-cierre-sumate {
+  padding-left: 7.2%;
+  margin: 10px; }
+
+.sumate_nosotros .whatsapp a {
+  position: fixed;
+  bottom: 13%;
+  right: 0.5%; }
+
+.sumate_nosotros .whatsapp img {
+  width: 65px;
+  height: 65px; }
+
+main {
+  grid-area: main; }
+
+.contacto h2 {
+  text-align: center;
+  background-color: rgba(239, 225, 198, 0.904);
+  color: black;
+  padding: 10px; }
+
+.contacto h4 {
+  text-align: center;
+  color: black;
+  padding: 10px; }
+
+.contacto .nombre-formulario {
+  padding-left: 33.3%;
+  margin: 5px; }
+
+.contacto .ubicacion-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.contacto .email-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.contacto .numero-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.contacto .servicio-formulario {
+  padding-left: 33.5%;
+  margin: 5px; }
+
+.contacto .comentarios-formulario {
+  text-align: center;
+  padding: 5px; }
+
+.contacto .submit-formulario {
+  text-align: center;
+  margin: 5px; }
+
+.contacto .img-cierre-contacto {
+  padding-left: 7.2%;
+  margin: 10px; }
+
+.contacto .whatsapp a {
+  position: fixed;
+  bottom: 13%;
+  right: 0.5%; }
+
+.contacto .whatsapp img {
+  width: 65px;
+  height: 65px; }
+
+footer {
+  background-color: beige;
+  grid-area: footer; }
+  footer nav ul li {
+    margin: 15px;
+    font-size: 15px;
+    display: flex;
+    transition: 0.5s ease-in; }
+    footer nav ul li a {
+      text-decoration: none;
+      color: black; }
+      footer nav ul li a:hover {
+        color: darkmagenta; }
+  footer nav a img {
+    width: 50px;
+    height: 50px;
+    padding: 5px; }
